@@ -1,0 +1,159 @@
+/*fonts*/
+	/*	@font-face {
+			font-family: 'Conv_16063';
+			src: url('../fonts/16063.eot');
+			src: local('☺'), url('../fonts/16063.woff') format('woff'), url('../fonts/16063.ttf') format('truetype'), url('../fonts/16063.svg') format('svg');
+			font-weight: normal;
+			font-style: normal;
+			}*/
+	@font-face {
+		font-family: 'Conv_02587_ARIALMT';
+		src: url('../fonts/fonts/02587_ARIALMT.eot');
+		src: local('☺'), url('../fonts/02587_ARIALMT.woff') format('woff'), url('../fonts/fonts/02587_ARIALMT.ttf') format('truetype'), url('../fonts/fonts/02587_ARIALMT.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Conv_Myriad Pro Black Cond Bold Italic';
+		src: url('../fonts/Myriad Pro Black Cond Bold Italic.eot');
+		src: local('☺'), url('../fonts/Myriad Pro Black Cond Bold Italic.woff') format('woff'), url('../fonts/Myriad Pro Black Cond Bold Italic.ttf') format('truetype'), url('../fonts/Myriad Pro Black Cond Bold Italic.svg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+/*reset*/
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+body{
+	font-family: 'Conv_02587_ARIALMT';
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+ul,li{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+h1{
+	font-family: 'Conv_Myriad Pro Black Cond Bold Italic';
+	text-transform: uppercase;
+	font-size: 36px;
+}
+.container{
+	width:1000px;
+	margin: 0 auto;
+}
+.top{
+	background: url('../img/sky.png')repeat-x center top;
+	/*background: url(../img/town.png)repeat-x center;*/
+}
+.topLine{
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	margin-top: 27px;
+	padding-bottom: 27px;
+	background: url(../img/grass.png)no-repeat top right;
+}
+.logo{
+}
+.search{
+	width: 224px;
+	height: 32px;
+	border: 3px solid #dfdfdf;
+	border-radius: 30px;
+	margin-left: 443px;
+	padding-left: 16px;
+}
+/*.search:after{
+	content: "";
+	position: absolute;
+	background: url(../img/magnifier.png);
+	left: 95%;
+	bottom: 50%;
+}*/
+.topLine>p{
+	width: 182px;
+	height: 23px;
+	margin-left: 11px;
+	font-size: 11px;
+	color: #7d7d7d;
+}
+.menu>ul {
+    display: flex;
+    justify-content: space-around ;
+    background: #047fc1;
+    padding-bottom: 12px;
+    padding-top: 11px;
+    border-top:3px solid #01b7ee;
+    border-radius:5px;
+}
+.active{
+	
+}
+.in_menu>a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#fff;
+}
+.in_menu:hover a{
+	color: #fff200; 
+}
+.active{
+	background: #01b7ee;
+	padding:11px 27px;
+}
+.mainInf{
+	position: relative;
+	margin-top: 27px;
+	background: url(../img/town.png)repeat-x center ;
+	min-height: 200px
+}
+.in_mainInf{
+	position: absolute;
+	top:62px;
+	right:62px;
+	width: 450px;
+	color:#fff;
+}

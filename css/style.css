@@ -71,12 +71,16 @@ h2{
 	font-size: 18px;
 	background:linear-gradient(#fff, #ececec);
 	padding: 16px 0 18px 15px;
-	margin-bottom:16px;
+	/*margin-bottom:16px;*/
 }
 h3{
 	font-size: 14px;
 	color:#0174bd;
 	text-decoration: underline;
+}
+h3:hover{
+	color: #f14950;
+	cursor:pointer;
 }
 .container{
 	width:1000px;
@@ -145,6 +149,9 @@ h3{
 	width: 450px;
 	color:#fff;
 }
+.woman{
+	box-shadow: 15px 15px 27px #b9baba;
+}
 /*.circle{
 	position: absolute;
 	width: 10px;
@@ -208,4 +215,37 @@ box-sizing:padding-box;
 	border:1px solid #e7e7e7;
 	border-radius: 5px;
 	/*padding:16px 338px 18px 15px;*/
+}
+.block_publications{
+	display: flex;
+	margin-bottom:15px;
+	margin-top: 16px;
+}
+.man{
+	margin-right: 15px;
+	height: 114px;
+}
+.publicationsInfo{
+	width: 245px;
+}
+.publicationsInfo>h3{
+	width: 255px;
+	margin-bottom: 13px;
+}
+.divide{
+	margin-bottom: 11px;
+}
+.description{
+	height: 49px;
+	width: 242px;
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+.buttom{
+	text-decoration: none;
+	color: #fff;
+	background: #0080c0;
+	padding: 9px 12px 7px 17px;
+	border-top: 2px solid #00bdf3;
+	border-radius: 5px;
 }

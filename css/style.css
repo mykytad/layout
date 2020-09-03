@@ -139,6 +139,11 @@ aside{
     border-top:3px solid #01b7ee;
     border-radius:5px;
 }
+.menu>ul>li{
+	background: #047fc1;
+/*	padding-bottom:12px ;
+	padding-top:11px ;*/
+}
 .in_menu>a{
 	text-decoration: none;
 	text-transform: uppercase;
@@ -148,8 +153,10 @@ aside{
 	color: #fff200; 
 }
 .active{
-	background: #01b7ee;
+	background:#01b7ee;
 	/*padding:11px 27px;*/
+	/*height: 35px;*/
+
 }
 .mainInf{
 	position: relative;
@@ -229,6 +236,7 @@ aside{
 .btn{
 /*	width: 221px;
 	height: 38px;*/
+	position: relative;
 	background:linear-gradient(#fff , #f4f4f4);
 	text-decoration: underline;
 	padding: 13px 69px 12px 14px;
@@ -238,9 +246,27 @@ aside{
 	color: #0c8a2d;
 	border:1px solid #0c8a2d;
 }
+.btnGreen:after{
+	content:"";
+	height: 33px;
+	width: 33px;
+	position:absolute;
+	top:-18.5px;
+	right:7px;
+	background: url('../img/greenFinger.png');
+}
 .btnRed{
 	color: #e31b3b;
 	border:1px solid #e31b3b;
+}
+.btnRed:after{
+	content:"";
+	height: 33px;
+	width: 33px;
+	position:absolute;
+	top:-16.5px;
+	right:15px;
+	background: url('../img/redFinger.png');
 }
 .publications{
 	width: 503px;
@@ -384,6 +410,8 @@ aside{
 }
 .mapPartners>li>a{
 	color:#848484;
+	padding-left:5px;
+	background: url('../img/miniArrow.png')no-repeat left;
 }
 .freePixle{
 	display: flex;

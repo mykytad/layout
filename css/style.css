@@ -68,10 +68,22 @@ h1{
 	font-size: 36px;
 }
 h2{
+	position:relative;
 	font-size: 18px;
 	background:linear-gradient(#fff, #ececec);
 	padding: 16px 0 18px 15px;
 	/*margin-bottom:16px;*/
+}
+h2:before{
+	content:"";
+	position: absolute;
+	bottom:-4px;
+	height: 10px;
+	width: 10px;
+	transform: skewY(45deg);
+	background:#ebebeb;
+	z-index: -5;
+	border:1px solid #e7e7e7;
 }
 h3{
 	font-size: 14px;
@@ -82,6 +94,9 @@ h3{
 h3:hover{
 	color: #f14950;
 	cursor:pointer;
+}
+aside{
+	margin-top: 16px;
 }
 .container{
 	width:1000px;
@@ -304,7 +319,7 @@ h3:hover{
 .pages{
 	display:flex;
 	justify-content:space-around;
-	align-items:center;
+	align-items:flex-end;
 	margin: 23px 0 26px 0;
 }
 .pagesList{
@@ -315,52 +330,38 @@ h3:hover{
 }
 .pagesList>li>a{
 	color: #000;
+	font-size: 12px;
 	display:block;
 	transition: all 0.5s ease;
+	text-decoration: underline;
 }
 .pagesList>li:hover a{
 	color: #ed1c24;
 }
-.activePages>a{
+.pagesList>.activePages>a{
 	font-size: 18px;
     color: #0583c3;
-}
-.left{
-	position: relative;
-	cursor: pointer;
-	padding-left: 20px;
-	color:#000;
-	text-decoration: underline;
-	font-size: 18px;
-}
-.left:before{
-	content:"";
-	position:absolute;
-	left:-5px;
-	width: 20px;
-	height: 20px;
-	background: url('../img/arrowL.svg')no-repeat;
-	background-position: 30px 0;
-}
-.right{
-	position: relative;
-	cursor: pointer;
-	padding-right: 20px;
-	color:#000;
-	text-decoration: underline;
-	font-size: 18px;
-}
-.right:after{
-	content:"";
-	position:absolute;
-	top:50%;
-	right:-5px;
-	width: 20px;
-	height: 20px;
-	background: url('../img/arrowR.svg')no-repeat;
+    text-decoration: none;
 }
 .articles{
 	margin-top: 54px;
 	border:1px solid #e7e7e7;
 	border-radius: 5px;
+	width: 228px;
+}
+.blockArticlesList{
+	margin: 14px 15px 14px 0;
+	padding-left: 30px;
+}
+.blockArticlesList>li{
+	margin-top:12px;
+	width: 176px;
+}
+.blockArticlesList>li>a{
+	color:#0174bd;
+	text-decoration: underline;
+	transition: all 0.2s ease;
+}
+.blockArticlesList>li:hover a{
+	color: #ed1c24;
 }

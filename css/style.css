@@ -246,6 +246,7 @@ aside{
 	width: 503px;
 	border:1px solid #e7e7e7;
 	border-radius: 5px;
+
 	/*padding:16px 338px 18px 15px;*/
 }
 .block_publications{
@@ -320,7 +321,7 @@ aside{
 	display:flex;
 	justify-content:space-around;
 	align-items:flex-end;
-	margin: 23px 0 26px 0;
+	margin: 20px 0 20px 0;
 }
 .pagesList{
 	display:flex;
@@ -350,12 +351,14 @@ aside{
 	width: 228px;
 }
 .blockArticlesList{
-	margin: 14px 15px 14px 0;
-	padding-left: 30px;
+	margin: 15px 15px 14px 0;
+	padding-left: 20px;
 }
 .blockArticlesList>li{
+	background: url('../img/doubleArrow.png')no-repeat left;
 	margin-top:12px;
 	width: 176px;
+	padding-left: 10px;
 }
 .blockArticlesList>li>a{
 	color:#0174bd;
@@ -364,4 +367,33 @@ aside{
 }
 .blockArticlesList>li:hover a{
 	color: #ed1c24;
+}
+.footer{
+	margin-top:28px;
+	margin-bottom: 19px;
+}
+.footerInfo{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 23px;
+	color:#848484;
+}
+.footerInfo>p{
+	width:445px;
+}
+.mapPartners>li>a{
+	color:#848484;
+}
+.freePixle{
+	display: flex;
+	align-items: flex-end;
+}
+.freePixle>p{
+	width: 157px;
+	text-align: right;
+	margin-right: 12px;
+}
+.freePixle>p>a{
+	color:#848484;
 }

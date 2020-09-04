@@ -133,14 +133,14 @@ aside{
 .menu>ul {
     display: flex;
     justify-content: space-around ;
-    background: #047fc1;
+    background-image: linear-gradient(to top, #0072bc 0%, #0b96ca 100%);
     padding-bottom: 12px;
     padding-top: 11px;
     border-top:3px solid #01b7ee;
     border-radius:5px;
 }
 .menu>ul>li{
-	background: #047fc1;
+
 /*	padding-bottom:12px ;
 	padding-top:11px ;*/
 }
@@ -153,7 +153,7 @@ aside{
 	color: #fff200; 
 }
 .active>a{
-	background:#01b7ee;
+	background-image: linear-gradient(to top, #098dd9 0%, #00bff3 100%);
 	padding:11px 27px;
 }
 .mainInf{

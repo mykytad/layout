@@ -152,11 +152,9 @@ aside{
 .in_menu:hover a{
 	color: #fff200; 
 }
-.active{
+.active>a{
 	background:#01b7ee;
-	/*padding:11px 27px;*/
-	/*height: 35px;*/
-
+	padding:11px 27px;
 }
 .mainInf{
 	position: relative;

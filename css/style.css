@@ -113,10 +113,32 @@ aside{
 	padding-bottom: 27px;
 	
 }
-.topLine>form{
+.formSearch{
+	position: relative;
+	z-index: 5;
+}
+.formSearch:before{
+	content:"";
+	position:absolute;
+	right:15px;
+	top:calc(50% - 7px);
+	z-index: 5;
+	background: url(../img/magnifier.png)no-repeat top right;
+	width: 15px;
+	height: 15px;
+}
+.formSearch:after{
+	content:"";
+	position:absolute;
+	right:-22px;
+	top:0;
+	z-index: -5;
 	background: url(../img/grass.png)no-repeat top right;
+	width: 159px;
+	height: 67px;
 }
 .search{
+	/*display:none;*/
 	width: 224px;
 	border: 3px solid #dfdfdf;
 	border-radius: 30px;

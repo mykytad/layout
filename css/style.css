@@ -103,15 +103,24 @@ aside{
 	margin: 0 auto;  
 }
 .top{
+	position:relative;
 	background: url('../img/sky.png')no-repeat center top,url(../img/town.png)repeat-x center center,linear-gradient(to top, #ebebeb 0%, #fff 100%);
+}
+.top:after{
+	content:"";
+	position: absolute;
+	bottom:-2px;
+	left:calc(50% - 50%);
+	height: 1px;
+	width: 100%;
+	background: #ebebeb;
 }
 .topLine{
 	vertical-align: middle;
 	display: flex;
 	align-items: center;
 	margin-top: 27px;
-	padding-bottom: 27px;
-	
+	padding-bottom: 27px;	
 }
 .formSearch{
 	position: relative;
@@ -138,13 +147,16 @@ aside{
 	height: 67px;
 }
 .search{
-	/*display:none;*/
 	width: 224px;
 	border: 3px solid #dfdfdf;
 	border-radius: 30px;
 	margin-left: 443px;
 	padding: 10px 0 10px 16px;
 }
+::-webkit-input-placeholder {color: #b7b7b7;}
+::-moz-placeholder          {color: #b7b7b7;}/* Firefox 19+ */
+:-moz-placeholder           {color: #b7b7b7;}/* Firefox 18- */
+:-ms-input-placeholder      {color: #b7b7b7;}
 .topLine>p{
 	width: 182px;
 	height: 23px;
@@ -156,21 +168,44 @@ aside{
     display: flex;
     justify-content: space-around ;
     background-image: linear-gradient(to top, #0072bc 0%, #0b96ca 100%);
-    padding-bottom: 12px;
-    padding-top: 11px;
+/*    padding-bottom: 12px;
+    padding-top: 11px;*/
     border-top:3px solid #01b7ee;
     border-radius:5px;
 }
 .menu>ul>li{
-
 /*	padding-bottom:12px ;
 	padding-top:11px ;*/
 }
 .in_menu>a{
+	display: block;
+	padding-bottom: 12px;
+    padding-top: 11px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#fff;
 }
+.in_menu{
+	position: relative;
+}
+/*.in_menu:before{
+	content:"";
+	position:absolute;
+	top:calc(50% - 18px);
+	right:-10%;
+	width: 1px;
+	height: 36px;
+	background:linear-gradient(to top,red , green);
+}
+.in_menu:after{
+	content:"";
+	position:absolute;
+	top:calc(50% - 18px);
+	left:-10%;
+	width: 1px;
+	height: 36px;
+	background:linear-gradient(to top,black , white);	
+}*/
 .in_menu:hover a{
 	color: #fff200; 
 }
@@ -194,17 +229,37 @@ aside{
 .woman{
 	box-shadow: 15px 15px 27px #b9baba;
 }
-/*.circle{
-	position: absolute;
+
+
+
+
+
+.circleWrap{
+	position: relative;
+}
+.circleWrap>ul{
+	position:absolute;
+	top:190px;
+	right:0;
+	display:flex;
+	width: 100px;
+}
+.circle>li{
 	width: 10px;
 	height: 10px;
 	background: #bbb8b5;
 	border-radius: 50%;
 	margin-left:7px;
 }
-.circleActive{
-	background:radial-gradient(##f88b8b #f84f4f ) ;
-}*/
+.activeCircle>a{
+	background: radial-gradient (at 65% 15%, #f88b8b , #f84f4f )
+}
+
+
+
+
+
+
 .shopMenu{
 	display: flex;
 	justify-content: space-between;

@@ -251,8 +251,8 @@ aside{
 	border-radius: 50%;
 	margin-left:7px;
 }
-.activeCircle>a{
-	background: radial-gradient (at 65% 15%, #f88b8b , #f84f4f )
+.circleWrap>.circle .active{
+	background: #f84f4f;
 }
 
 
